@@ -1,0 +1,129 @@
+
+
+/* Day Component */
+.date-picker-day {
+    border-radius: 50%;
+    border: none;
+    min-width: 3em;
+    min-height: 3em;
+    background-color: transparent;
+    font-size: 1em;
+    
+}
+
+.date-picker-day:hover {
+    background-color: rgba(69, 69, 69, 0.2);
+}
+
+.date-picker-day:disabled:hover {
+    background-color: transparent;
+}
+
+.sun { grid-column: 1 / 2; }
+.mon { grid-column: 2 / 3; }
+.tue { grid-column: 3 / 4; }
+.wed { grid-column: 4 / 5; }
+.thur { grid-column: 5 / 6; }
+.fri { grid-column: 6 / 7; }
+.sat { grid-column: 7 / 8; }
+
+
+
+
+.input {
+    caret-color: transparent;
+    outline: none;
+}
+
+.custom-date-picker {
+    width: fit-content;
+    padding: 2em;
+    background-color: rgba(22, 22, 22, 0.1);
+    border-radius: 1em;
+
+}
+
+.custom-date-picker-selected-date {
+    font-weight: bolder;
+    font-size: 1.2em;
+    color: white;
+    padding: .5em .5em;
+    background-color: rebeccapurple;
+}
+
+.custom-date-picker-title-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: rebeccapurple;
+}
+
+.custom-date-picker-title {
+    margin: 0;
+    padding: 0.5em 0.5em;
+    color: white;
+    font-weight: bold;
+    flex: 1;
+    
+}
+
+.custom-date-picker-grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-flow: row dense;
+    
+}
+
+.custom-date-picker-header{
+    grid-column: 1 / 8;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-template-rows: 2em;
+    
+    
+    
+    
+    
+}
+
+.custom-date-picker-dates {
+    display: grid;
+    grid-column: 1 / 8;
+    grid-template-columns: inherit;
+    justify-content: center;
+}
+
+
+
+
+.custom-date-picker-header > div {
+    max-width: 3em;
+    text-align: center;
+    color: rebeccapurple;
+    padding-top: 6px;
+}
+
+
+/* Buttons */
+.moveToBtn {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: transparent;
+    color: white;
+    box-sizing: border-box;
+}
+
+.moveToBtn:hover{
+    color: orange;
+}
+
+
+
+
+
+
